@@ -2,8 +2,15 @@
 
 dnsmasq in a docker container, configurable via a [simple web UI](https://github.com/jpillora/webproc)
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/jpillora/dnsmasq.svg)][dockerhub]
-[![Image Size](https://images.microbadger.com/badges/image/jpillora/dnsmasq.svg)][dockerhub]
+
+[![Docker Pulls](https://img.shields.io/docker/pulls/bodsch/docker-dnsmasq)][hub]
+[![Image Size](https://images.microbadger.com/badges/image/bodsch/docker-dnsmasq)][microbadger]
+[![Build Status](https://travis-ci.org/bodsch/docker-dnsmasq)][travis]
+
+[hub]: https://hub.docker.com/r/bodsch/docker-dnsmasq/
+[microbadger]: https://microbadger.com/images/bodsch/docker-dnsmasq
+[travis]: https://travis-ci.org/bodsch/docker-dnsmasq
+
 
 ### Usage
 

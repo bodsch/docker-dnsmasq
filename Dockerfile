@@ -51,6 +51,9 @@ RUN \
     /tmp/* \
     /var/cache/apk/*
 
-COPY dnsmasq.conf /etc/dnsmasq.conf
+COPY rootfs/ /
 
-CMD ["webproc","--config","/etc/dnsmasq.conf", "--port", "8000", "--", "dnsmasq", "--no-daemon"]
+CMD [ "/init/run.sh" ]
+
+# COPY dnsmasq.conf /etc/dnsmasq.conf
+# CMD ["webproc","--config","/etc/dnsmasq.conf", "--port", "8000", "--", "dnsmasq", "--no-daemon"]

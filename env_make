@@ -1,7 +1,7 @@
-PORTS = \
-  --publish 8000:8000 \
-  --publish 53533:5353 \
-  --publish 53533:5353/udp
+PORTS = #\
+#  --publish 8000:8000 \
+#  --publish 53533:5353 \
+#  --publish 53533:5353/udp
 
 VOLUMES = \
   --volume /var/log/docker:/var/log
