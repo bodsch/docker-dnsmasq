@@ -1,0 +1,12 @@
+sudo: required
+
+services:
+  - docker
+
+install:
+  - docker build --tag bodsch/docker-dnsmasq .
+  - docker run --detach --name dnsmasq bodsch/docker-dnsmasq
+
+script:
+  - docker ps | grep -q dnsmasq
+
