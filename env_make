@@ -7,4 +7,4 @@ VOLUMES = \
   --volume /var/log/docker:/var/log
 
 ENV =
-#  --env
+  --env DNS_FORWARDER="8.8.8.8,8.8.4.4"

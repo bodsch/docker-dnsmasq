@@ -1,6 +1,7 @@
 #!/bin/sh
 
 DNS_FORWARDER=${DNS_FORWARDER:-"208.67.220.220,208.67.222.222,141.1.1.1"}
+WEB_PORT=${WEB_PORT:-"8000"}
 
 config_file="/etc/dnsmasq.conf"
 
@@ -27,4 +28,4 @@ fi
 
 sed -i 's|%DNS_FORWARDING%|'${forwarder}'|g' ${config_file}
 
-webproc --config ${config_file} -- dnsmasq --no-daemon
+webproc --config ${config_file} --port ${WEB_PORT} -- dnsmasq --no-daemon
